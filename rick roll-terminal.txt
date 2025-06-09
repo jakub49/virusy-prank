@@ -1,0 +1,2 @@
+@echo off
+start cmd /c "curl ascii.live/rick"

