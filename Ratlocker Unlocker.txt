@@ -1,0 +1,54 @@
+REM Title:          Ratlocker Unlocker
+REM Author:         Jakub42
+REM Target:         Windows
+REM Description:    Reverses the Ratlocker changes - restores file extensions and wallpaper
+
+REM Base delay after initiation
+DELAY 250
+GUI d
+GUI r
+DELAY 100
+STRING powershell.exe
+ENTER
+DELAY 250
+
+REM Step 1: Restore file extensions on Desktop
+STRING Get-ChildItem "$HOME\Desktop" -Filter *.ratl0ck3r | Rename-Item -NewName { $_.Name -replace '\.ratl0ck3r$','' }
+ENTER
+DELAY 500
+
+REM Step 2: Restore original wallpaper
+STRING $original = "$HOME\Pictures\wallpaper.ratl0ck3r"
+ENTER
+STRING $code = @"
+ENTER
+STRING using System.Runtime.InteropServices;
+ENTER
+STRING namespace Win32 {
+ENTER
+STRING     public class Wallpaper {
+ENTER
+STRING         [DllImport("user32.dll", CharSet=CharSet.Auto)]
+ENTER
+STRING         public static extern int SystemParametersInfo(int uAction, int uParam, string lpvParam, int fuWinIni);
+ENTER
+STRING     }
+ENTER
+STRING }
+ENTER
+STRING "@
+ENTER
+STRING Add-Type $code
+ENTER
+STRING [Win32.Wallpaper]::SystemParametersInfo(20, 0, $original, 3)
+ENTER
+DELAY 500
+
+REM Step 3: Optional - Delete the fake wallpaper
+STRING Remove-Item "$HOME\Pictures\ratl0ck3r.png" -ErrorAction SilentlyContinue
+ENTER
+DELAY 250
+
+REM Step 4: Close PowerShell
+STRING exit
+ENTER
