@@ -1,0 +1,136 @@
+REM ============================================
+REM   RUBBER DUCKY PRANK - "YOU ARE AN IDIOT"
+REM ============================================
+REM Autor: Jakub49
+
+REM Czeka 2 sekundy po podłączeniu
+DELAY 2000
+
+REM --- Otwiera filmik w przeglądarce ---
+GUI r
+DELAY 700
+STRING https://www.youtube.com/watch?v=5U1wsiw2_30
+ENTER
+DELAY 3000
+
+REM --- Otwiera 5 notatników z tekstem "You are an Idiot" ---
+REM Notatnik 1
+GUI r
+DELAY 500
+STRING notepad
+ENTER
+DELAY 1200
+STRING You are an Idiot
+ENTER
+DELAY 300
+
+REM Notatnik 2
+GUI r
+DELAY 500
+STRING notepad
+ENTER
+DELAY 1200
+STRING You are an Idiot
+ENTER
+DELAY 300
+
+REM Notatnik 3
+GUI r
+DELAY 500
+STRING notepad
+ENTER
+DELAY 1200
+STRING You are an Idiot
+ENTER
+DELAY 300
+
+REM Notatnik 4
+GUI r
+DELAY 500
+STRING notepad
+ENTER
+DELAY 1200
+STRING You are an Idiot
+ENTER
+DELAY 300
+
+REM Notatnik 5
+GUI r
+DELAY 500
+STRING notepad
+ENTER
+DELAY 1200
+STRING You are an Idiot
+ENTER
+DELAY 500
+
+REM --- BONUS: Otwiera Paint i rysuje losowe linie ---
+GUI r
+DELAY 500
+STRING mspaint
+ENTER
+DELAY 2000
+REM Maksymalizuje okno
+GUI UP
+DELAY 500
+REM Wybiera ołówek i rysuje chaos
+MOUSEMOVE 100 200
+LEFTCLICK
+DELAY 100
+MOUSEMOVE 400 300
+LEFTCLICK
+DELAY 100
+MOUSEMOVE 200 500
+LEFTCLICK
+DELAY 100
+MOUSEMOVE 600 200
+LEFTCLICK
+
+REM --- BONUS 2: Otwiera wiele okien Eksploratora plików ---
+DELAY 500
+REPEAT 3
+GUI e
+DELAY 800
+END_REPEAT
+
+REM --- BONUS 3: Ustawia głośność na 50% i włącza/wyłącza CAPS LOCK ---
+DELAY 500
+REPEAT 10
+CAPSLOCK
+DELAY 200
+END_REPEAT
+
+REM --- BONUS 4: Otwiera Command Prompt z "hakerskim" tekstem ---
+DELAY 500
+GUI r
+DELAY 500
+STRING cmd
+ENTER
+DELAY 1000
+STRING color 0a
+ENTER
+DELAY 300
+STRING echo SYSTEM COMPROMISED...
+ENTER
+DELAY 500
+STRING echo Downloading virus.exe...
+ENTER
+DELAY 1000
+STRING tree C:\Windows\System32
+ENTER
+
+REM --- BONUS 5: Włącza narratora Windows (odczytuje tekst) ---
+REM Odkomentuj jeśli chcesz EXTRA chaos
+REM DELAY 1000
+REM GUI CTRL ENTER
+
+REM ============================================
+REM   PRANK COMPLETE!
+REM   Aby zamknąć wszystko: ALT+F4 wielokrotnie
+REM   Aby wyłączyć narratora: WIN+CTRL+ENTER
+REM ============================================
+
+REM OSTRZEŻENIE:
+REM Ten skrypt jest TYLKO do celów edukacyjnych
+REM i zabawy między znajomymi. NIE używaj bez zgody!
+REM Autor nie ponosi odpowiedzialności za nadużycia.
